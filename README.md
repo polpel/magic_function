@@ -1,4 +1,4 @@
-# UVtutrepo
+# Magic Function
 
 Small and simple repo for the git tutorial.  
 
