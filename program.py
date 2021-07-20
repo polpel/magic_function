@@ -18,7 +18,8 @@ def magic_function(a, b, c):
     """
     
     # List of tiny functions implemented
-    options = ['add', 'mult', 'rgb']
+    #options = ['add', 'mult', 'rgb', 'pow']
+    options = ['pow']
 
     do = random.choice(options)
     
@@ -48,3 +49,16 @@ def magic_function(a, b, c):
         plt.title('Your numbers turned into a colour :)')
         plt.show()
         return
+
+    # Large to the power of mid to the power of small
+    if do == 'pow':
+        sort = np.sort([a, b, c])
+        powered = sort[2]**sort[1]**sort[0]
+        print(f'{sort[2]} to the {sort[1]} to the {sort[0]} is {powered} !')
+        return
+
+if __name__ == '__main__':
+    a = 3
+    b = 2
+    c = 5
+    magic_function(a,b,c)
